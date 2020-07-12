@@ -310,7 +310,7 @@ def fit(args, network, data_loader, **kwargs):
     lr, lr_scheduler = _get_lr_scheduler(args, kv)
 
     # create model
-    model = mx.mod.MyModule(
+    model = MyModule(
         context       = devs,
         symbol        = network
     )
